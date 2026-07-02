@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-golf-cream text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-golf-green px-6 py-3 text-sm font-semibold text-white transition hover:bg-golf-light;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center rounded-full border-2 border-golf-green px-6 py-3 text-sm font-semibold text-golf-green transition hover:bg-golf-green hover:text-white;
+  }
+
+  .section-heading {
+    @apply font-display text-3xl font-bold text-golf-green md:text-4xl;
+  }
+
+  .section-subheading {
+    @apply mt-3 max-w-2xl text-lg text-gray-600;
+  }
+}

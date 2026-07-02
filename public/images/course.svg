@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#1B4332"/>
+  <rect y="200" width="800" height="400" fill="#40916C"/>
+  <path d="M0 350 Q200 280 400 350 T800 350 L800 600 L0 600 Z" fill="#2D6A4F"/>
+  <circle cx="400" cy="320" r="8" fill="#fff"/>
+  <text x="400" y="500" text-anchor="middle" fill="#D4A574" font-family="Georgia,serif" font-size="28">Championship Course</text>
+</svg>
