@@ -1,4 +1,4 @@
-const CMS_URL = process.env.WP_CMS_URL ?? "http://localhost/multiblogs";
+const CMS_URL = process.env.WP_CMS_URL ?? "https://dev2.brandrapdev.co/coriescafe";
 const SITE_SLUG = process.env.MSBM_SITE_SLUG ?? "greenfair-golf";
 const API_KEY = process.env.MSBM_API_KEY ?? "";
 

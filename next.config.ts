@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const cmsUrl = process.env.WP_CMS_URL ?? "http://localhost/multiblogs";
+const cmsUrl = process.env.WP_CMS_URL ?? "https://dev2.brandrapdev.co/coriescafe";
 
 let cmsHostname = "localhost";
 try {
