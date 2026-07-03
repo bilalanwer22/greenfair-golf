@@ -1,12 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Hero } from "@/components/Hero";
-import { BlogCard } from "@/components/BlogCard";
-import { blogPosts, stats, features, images } from "@/lib/data";
+import { stats, features, images } from "@/lib/data";
 
 export default function HomePage() {
-  const latestPosts = blogPosts.slice(0, 3);
-
   return (
     <>
       <Hero
@@ -86,28 +83,6 @@ export default function HomePage() {
                 </h3>
                 <p className="mt-2 text-sm text-gray-600">{feature.description}</p>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Latest Blogs */}
-      <section className="py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
-            <div>
-              <h2 className="section-heading">Latest from Our Blog</h2>
-              <p className="section-subheading">
-                Tips, stories, and insights from the world of golf.
-              </p>
-            </div>
-            <Link href="/blogs" className="btn-outline shrink-0">
-              View All Posts
-            </Link>
-          </div>
-          <div className="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {latestPosts.map((post) => (
-              <BlogCard key={post.slug} {...post} />
             ))}
           </div>
         </div>
